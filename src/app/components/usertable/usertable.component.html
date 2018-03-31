@@ -1,3 +1,29 @@
-<p>
-  usertable works!
-</p>
+<!--Atributos da tabela-->
+<div id="colunaLista">
+  <mat-table [dataSource] ="dataSource">
+      <ng-container matColumnDef="codigo">
+        <mat-header-cell *matHeaderCellDef> Código </mat-header-cell>
+        <mat-cell *matCellDef="let user"> {{12345678}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="cpf">
+          <mat-header-cell *matHeaderCellDef> CPF / CNPJ </mat-header-cell>
+          <mat-cell *matCellDef="let user"> {{'99.999.999-99'}}</mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="nome">
+            <mat-header-cell *matHeaderCellDef> Nome </mat-header-cell>
+            <mat-cell *matCellDef="let user"> {{'Nome do Cliente'}}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="telefone">
+              <mat-header-cell *matHeaderCellDef> Telefone </mat-header-cell>
+              <mat-cell *matCellDef="let user"> {{'(99) 999-9999'}}</mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="endereco">
+                <mat-header-cell *matHeaderCellDef> Endereço </mat-header-cell>
+                <mat-cell *matCellDef="let user"> {{'Rua Maria Helena Rocha, 205 - Tupi - Belo Horizonte - MG'}}</mat-cell>
+              </ng-container>
+            
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row> <!--Mostra o nome da Coluna!-->
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+</div>
+<fundo></fundo>
