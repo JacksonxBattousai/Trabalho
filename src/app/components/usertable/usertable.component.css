@@ -1,5 +1,6 @@
 #colunaLista{
-    margin-left: 40%;
-    margin-top: 15%;
+    position: absolute;
+    left: 40%;
+    top: 15%;
     background-color: white;
 }

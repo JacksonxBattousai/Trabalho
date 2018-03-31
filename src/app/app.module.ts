@@ -8,7 +8,9 @@ import { UsertableComponent } from './components/usertable/usertable.component';
 import {MatTableModule } from '@angular/material'
 import { HttpClientModule } from '@angular/common/http';
 import{ UserService } from './services/user.service';
-import { FundoComponent } from './fundo/fundo.component';
+import { FundoComponent } from './fundo/fundo.component;
+import { BuscaComponent } from './busca/busca.component;
+import { ClickMeComponent } from './click-me/click-me.component''';
 
 
 
@@ -16,7 +18,9 @@ import { FundoComponent } from './fundo/fundo.component';
   declarations: [
     AppComponent,
     UsertableComponent,
-    FundoComponent
+    FundoComponen,
+    BuscaComponent,
+    ClickMeComponentt
   ],
   imports: [
     BrowserModule,
