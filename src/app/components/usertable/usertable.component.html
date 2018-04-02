@@ -21,6 +21,10 @@
                 <mat-header-cell *matHeaderCellDef> Endereço </mat-header-cell>
                 <mat-cell *matCellDef="let user"> {{'Rua Maria Helena Rocha, 205 - Tupi - Belo Horizonte - MG'}}</mat-cell>
               </ng-container>
+              <ng-container matColumnDef="teste">
+                <mat-header-cell *matHeaderCellDef></mat-header-cell>
+                <mat-cell *matCellDef="let user"> {{''}}</mat-cell>
+              </ng-container>
             
             <mat-header-row id="negrito" *matHeaderRowDef="displayedColumns"></mat-header-row> <!--Mostra o nome da Coluna!-->
   <mat-row  *matRowDef="let row; columns: displayedColumns"></mat-row>

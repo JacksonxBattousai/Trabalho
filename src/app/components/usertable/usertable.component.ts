@@ -13,7 +13,7 @@ import { User } from '../../models/user.model';
 export class UsertableComponent implements OnInit {
 
   dataSource = new UserDataSource(this.userService);
-  displayedColumns = ['codigo','cpf','nome','telefone','endereco'];
+  displayedColumns = ['codigo','cpf','nome','telefone','endereco','teste'];
 
   constructor(private userService: UserService) { }
 

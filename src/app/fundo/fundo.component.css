@@ -1,9 +1,19 @@
 #fundobranco{
     position: absolute;
     left:31%;
-    top:18%;
-    max-width: 68%;
-    max-height: 50%;
+    top:2%;
+    width: 68%;
+    height: 7%;
 
     background-color: lightskyblue;
 }
+
+#search{
+    position: absolute;
+    left:3%;
+    top: 25%;
+    width: 85%;
+    height: 40%;
+}
+
+
