@@ -1,6 +1,15 @@
 #colunaLista{
-    position: absolute;
-    left: 40%;
-    top: 15%;
+    position: relative;
+    left: 30%;
+    top: 200px;
+    max-width: 70%;
+    
+    
     background-color: white;
+
+    
+}
+
+#negrito{
+    font-weight: bold;
 }

@@ -1,5 +1,9 @@
-#fundo{
+#fundobranco{
     position: absolute;
-    left:40%;
-    top:15%;
+    left:31%;
+    top:18%;
+    max-width: 68%;
+    max-height: 50%;
+
+    background-color: lightskyblue;
 }
