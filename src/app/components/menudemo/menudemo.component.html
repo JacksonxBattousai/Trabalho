@@ -8,15 +8,48 @@
 </div >
 <div id="menu" >
 
-<button mat-button [matMenuTriggerFor]="menu"> <mat-icon>more_vert</mat-icon>Menu</button>
+  <button mat-button [matMenuTriggerFor]="menu"> <mat-icon>more_vert</mat-icon>Menu</button>
   <mat-menu #menu="matMenu">
   <button mat-menu-item disabled><span>Clientes</span></button>
+  <button mat-menu-item [matMenuTriggerFor]="subMenu1">item 1</button>
+  <button mat-menu-item [matMenuTriggerFor]="subMenu2">item 2</button>
+  
   <button mat-menu-item>Settings</button>
   <button mat-menu-item>Sair</button>
+      <mat-menu #subMenu1="matMenu">
+        <button mat-menu-item>lista 1</button>
+        <button mat-menu-item [matMenuTriggerFor]="subsubMenu1">item 2</button>
+      </mat-menu>
+  <mat-menu #subsubMenu1="matMenu">
+      <button mat-menu-item>item 1</button>
+      <button mat-menu-item>item 5</button>
+      <button mat-menu-item>item 4</button>
+  </mat-menu>     
+      <mat-menu #subMenu2="matMenu">
+          <button mat-menu-item>lista 6</button>
+          <button mat-menu-item>lista 5</button>
+          <button mat-menu-item>lista 4</button>
+        </mat-menu> 
+        <mat-menu #subMenu3="matMenu">
+            <button mat-menu-item>lista 7</button>
+            <button mat-menu-item>lista 8</button>
+            <button mat-menu-item>lista 9</button>
+            <button mat-menu-item>lista 4</button>
+            <button mat-menu-item>lista 2</button>
+          </mat-menu> 
+          <mat-menu #subMenu4="matMenu">
+              <button mat-menu-item>lista 12</button>
+              <button mat-menu-item>lista 11</button>
+              <button mat-menu-item>lista 10</button>
+              <button mat-menu-item>lista 7</button>
+              <button mat-menu-item>lista 8</button>
+              <button mat-menu-item>lista 9</button>
+              <button mat-menu-item>lista 4</button>
+              <button mat-menu-item>lista 2</button>
+            </mat-menu>  
 
 
 </mat-menu>
 
 </div>
 
-<fundo></fundo>
